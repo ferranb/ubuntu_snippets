@@ -1,11 +1,12 @@
 # How to connect to ssh with X11 forwarding (i.e., forwarding the display)
 
-**Server**: The remote session. Where you want to connect and run something.
-**Client**: The local session. Where you want the graphical interface to appear.
+**Server**: The remote session where you want to connect and run something.
+
+**Client**: The local session where you want the graphical interface to appear.
 
 ## Server Requirements
 
-Install required packages (probably they are installed):
+Install required packages (they might already be installed):
 
     sudo apt install openssh-client install xauth xdg-utils
 
@@ -16,24 +17,24 @@ Ensure `/etc/ssh/sshd_config` contains the following line:
 You can check it with:
 
     egrep '^X11Forwarding +yes' /etc/ssh/sshd_config
-
-Restar the server is you have changed it:
+    
+Restart the SSH server if you made changes:
 
     sudo systemctl restart ssh
 
-## Client Requirements (probably fulfilled)
+## Client Requirements
 
-Install required packages (probably they are installed, too):
+Install required packages (they're likely already installed):
 
     sudo apt install openssh-client xauth xdg-utils
 
 ## Test it 
 
-Run:
+Connect with:
 
     ssh -Y username@remotehost 
 
-And execute any graphic application
+And execute any graphic application. For instance, `xeyes`.
 
 You might see messages like:
 
@@ -47,7 +48,7 @@ Run the command with environment forwarding:
 
     sudo -E command 
 
-## Optionall: Avoid typing -Y every time
+## Optional: Avoid typing -Y every time
 
 Edit (or create) the file `~/.ssh/config` and add:
 
