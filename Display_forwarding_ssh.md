@@ -8,7 +8,7 @@
 
 Install required packages (they might already be installed):
 
-    sudo apt install openssh-client install xauth xdg-utils
+    sudo apt install openssh-server xauth xdg-utils
 
 Ensure `/etc/ssh/sshd_config` contains the following line:
 
