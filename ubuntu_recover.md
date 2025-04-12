@@ -1,3 +1,5 @@
+# Some Commands for Ubuntu System Recovery
+
 **Disclaimer: Follow these notes at your own risk. I'm not responsible for anything you run in your devices. It's up to you!**
 
 As you probably know, most systems break at the worsts moments. In those moments, addrenaline runs high and, for me, referring to these notes is essential. These are the steps that have help me for years to get through such situations. Until today, I haven't needed to do anithing other that follow these steps.
