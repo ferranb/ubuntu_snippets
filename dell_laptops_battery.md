@@ -10,3 +10,6 @@ When you need the battery fully charged because you're going to use the laptop o
 
     sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg=PrimAcUse
 
+To view the current configuration:
+
+    sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg
