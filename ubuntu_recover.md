@@ -33,6 +33,12 @@ This is sometimes necessary in some installations when it happens that this file
 
 # Mounting LUKS 
 
+Make sure `cryptsetup` is installed in the Live system. If not:
+
+    sudo apt install cryptsetup
+
+Once you're sure:
+
     sudo lsblk -oNAME,FSTYPE,UUID | grep LUKS
     sudo cryptsetup luksOpen /dev/nvme0n1p4 crypt01
     sudo lsblk -oNAME,FSTYPE,UUID 
