@@ -1,3 +1,5 @@
+# Battery Charging Configuration for DELL Laptops
+
 To pronlongue the life of your battery, it's good practice to keep the charge between 50% and 80%. If you have a DELL laptop, the [Dell Command Configure Application](https://www.dell.com/support/home/en-uk/drivers/DriversDetails?driverId=V01T5&lwp=rt) it's very usefull for this. 
 
 If your DELL laptop stays plugged in for long periods, run this to help prolong the battery's life:
