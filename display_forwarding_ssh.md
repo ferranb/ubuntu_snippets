@@ -36,14 +36,12 @@ Connect with:
 
 And execute any graphic application. For instance, `xeyes`.
 
+## If `sudo` breaks the display forwarding
+
 You might see messages like:
 
     X11 connection rejected because of wrong authentication
-
-But it usually works fine anyway.
-
-## If `sudo` breaks the display forwarding
-
+    
 Run the command with environment forwarding:
 
     sudo -E command 
